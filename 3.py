@@ -1,4 +1,9 @@
 from PIL import Image, ImageFilter
+import os
+
+if not os.path.exists('blur'):
+    os.makedirs('blur')
+
 image1 = Image.open('1.png')
 image2 = Image.open('2.png')
 image3 = Image.open('3.png')
